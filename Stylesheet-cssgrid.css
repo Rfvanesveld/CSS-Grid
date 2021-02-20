@@ -1,0 +1,110 @@
+@media (min-width:320px) and (max-width: 700px) {
+
+body {
+    font-size: 30px;
+    font-family: inherit;
+    background-color: lightslategrey;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-gap: 5px;
+    height: 95vh;
+    grid-template-columns: repeat (12, 1fr);
+    grid-template-rows: 75px 460px 150px 75px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m"
+    "w w w w w w w w w w w w"
+    "f f f f f f f f f f f f";}
+
+.header {
+    background-color: #51A6F8;
+    grid-area: h;
+}
+
+.main {
+    background-color: #6FC041;
+    grid-area: m;}
+
+.widget {
+    background-color:#B269E1;
+    grid-area: w;}
+
+.footer {
+background-color:#0264BF;
+grid-area: f;}}
+
+@media (min-width: 701px) and (max-width: 1200px){
+
+    body {
+        font-size: 30px;
+        font-family: inherit;
+        background-color: lightslategrey;
+        text-align: center;
+    }
+    .container {
+        display: grid;
+        grid-gap: 5px;
+        height: 96vh;
+        grid-template-columns: repeat (12, 1fr);
+        grid-template-rows: 25px 450px 240px 50px;
+        grid-template-areas: 
+        "h m m m m m m m m m m m"
+        "h m m m m m m m m m m m"
+        "h w w w w w w w w w w w"
+        "h f f f f f f f f f f f";}
+    
+    .header {
+        background-color: #51A6F8;
+        grid-area: h;
+    }
+    
+    .main {
+        background-color: #6FC041;
+        grid-area: m;}
+    
+    .widget {
+        background-color:#B269E1;
+        grid-area: w;}
+    
+    .footer {
+    background-color:#0264BF;
+    grid-area: f;}}
+
+@media (min-width:1201px){
+
+    body {
+        font-size: 30px;
+        font-family: inherit;
+        background-color: lightslategrey;
+        text-align: center;
+    }
+    .container {
+        display: grid;
+        grid-gap: 5px;
+        height: 96vh;
+        grid-template-columns: repeat (12, 1fr);
+        grid-template-rows: 25px 450px 240px 50px;
+        grid-template-areas: 
+        "h m m m m m m m m m m w"
+        "h m m m m m m m m m m w"
+        "h m m m m m m m m m m w"
+        "h f f f f f f f f f f w";}
+    
+    .header {
+        background-color: #51A6F8;
+        grid-area: h;
+    }
+    
+    .main {
+        background-color: #6FC041;
+        grid-area: m;}
+    
+    .widget {
+        background-color:#B269E1;
+        grid-area: w;}
+    
+    .footer {
+    background-color:#0264BF;
+    grid-area: f;}}
